@@ -25,13 +25,12 @@ $router->post('/data' , function($req){
 #### Sessions:
 **Make sure you have session_start(); on top of each page
 
-Normal Constructor
+##### Normal Constructor
 ```PHP
 $mySessionVar = new Sessions();
 ```
 
-Overloaded Constructor:
-
+##### Overloaded Constructor:
 Sets a session variable
 ```PHP
 $mySessionVar = new Sessions('session-name' , 'session-value' , 0);
@@ -46,8 +45,7 @@ Session type 0 - expires when browser is closed
 
 Session type 1 - doesn't expire when browser is closed
 
-checkIsSession function:
-
+##### checkIsSession function:
 Returns 1 if the session variable exists and 0 if it doesn't.
 ```PHP
 //Use Normal Constructor
@@ -56,8 +54,7 @@ echo $sessionCheck->checkIsSession($sessionName);
 ```
 ARG1 = Session variable you are checking
 
-getSessionValue function:
-
+##### getSessionValue function:
 Returns the value of the session variable 
 ```PHP
 //Use Normal Constructor
