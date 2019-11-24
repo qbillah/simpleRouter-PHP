@@ -31,18 +31,23 @@ $mySessionVar = new Sessions();
 ```
 
 Overloaded Constructor:
+
 Sets a session variable
 ```PHP
 $mySessionVar = new Sessions('session-name' , 'session-value' , 0);
 ```
 ARG 1 = Session variable name
+
 ARG 2 = Session variable value
+
 ARG 3 = Session type
 
 Session type 0 - expires when browser is closed
-Sessin type 1 - doesn't expire when browser is closed
+
+Session type 1 - doesn't expire when browser is closed
 
 checkIsSession function:
+
 Returns 1 if the session variable exists and 0 if it doesn't.
 ```PHP
 //Use Normal Constructor
@@ -52,6 +57,7 @@ echo $sessionCheck->checkIsSession($sessionName);
 ARG1 = Session variable you are checking
 
 getSessionValue function:
+
 Returns the value of the session variable 
 ```PHP
 //Use Normal Constructor
